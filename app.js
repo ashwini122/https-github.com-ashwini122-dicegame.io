@@ -52,7 +52,7 @@ document.querySelector('.btn-roll').addEventListener('click' ,function() {
          scores[activePlayer] +=dice;
         document.querySelector('#score-' + activePlayer).innerHTML = scores[activePlayer];
     }
-    else if(scores[activePlayer] >= 10){
+    else if(scores[activePlayer] >= 100){
              document.querySelector('#name-' + activePlayer).innerHTML = "winner!!!"
         document.querySelector(".dice").style.display="none";
         document.querySelector('.player-' +activePlayer +'panel').classList.add('winner');
@@ -76,7 +76,7 @@ document.querySelector(".btn-hold").addEventListener('click', function(){
     
     
     //3.to check if the player won the game
-    if (scores[activePlayer] >= 10){
+    if (scores[activePlayer] >= 100){
         document.querySelector('#name-' + activePlayer).innerHTML = "winner!!!"
         document.querySelector(".dice").style.display="none";
     }
